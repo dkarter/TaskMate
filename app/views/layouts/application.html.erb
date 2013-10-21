@@ -7,6 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<% if current_user() %>
+  Welcome <%= current_user.name %>!
+<% else %>
+  <%= link_to "Sign in with Facebook", "/users/auth/facebook" %>  
+<% end %>
+
+
 
 <%= yield %>
 

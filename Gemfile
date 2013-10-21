@@ -42,4 +42,12 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
+
+# custom gems - Dorian
+######################
+
+# Authentication related
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
